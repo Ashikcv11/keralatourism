@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body background="./images3/fbg3.jpg">   
+
+    <div class="bground">
+        <!-- <button class="btn1" onclick="openpopup()">Login/Signup</button>
+        <button class="btn11" href="index.html">Home</button> -->
+
+        <div class="popup" id="popup">
+            <p>Log in to your Account</p>
+            <input type="text" class="inp" id="uname" placeholder="Email address or phone number">
+            <input type="password" class="inp" id="pass" placeholder="Password">
+            <div class="btn">
+                <h3 onclick="colsepopup()">Log In</h3>
+            </div>
+            <p id="forg">Forgotten account?</p>
+            <p id="forg1" onclick="opensigpop()">Dont't have an account!!</p>
+        </div>
+
+        <div class="sigpop" id="sigpop">
+            <h2>Creat a new account</h2>
+            <p>it's quick and easy</p>
+            <input type="text" class="siginp" placeholder="Name"> 
+            <input type="text" class="siginp" placeholder="Surname"> 
+            <input type="text" class="siginp1" placeholder="Email address or phone number">
+            <input type="password" class="siginp1" placeholder="Password"> 
+            <input type="password" class="siginp1" placeholder="conform Password"> 
+            <input type="text" class="siginp" placeholder="Address"> 
+            <input type="text" class="siginp" placeholder="Pincode"> 
+
+
+            <div class="btn2">
+                <h3 href="index.html">Sign up</h3>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Packeges</a></li>
+            <li><a href="top6.html">Hot spots</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul> 
+    </div> 
+    
+    <script>
+        let popup = document.getElementById("popup")
+        function openpopup(){
+            popup.classList.add("openpopup");
+        }
+        function colsepopup(){
+            popup.classList.remove("openpopup");
+
+        }
+
+        let sigpop = document.getElementById("sigpop");
+        function opensigpop(){
+            sigpop.classList.add("opensigpop");
+        }
+        function closesigpop(){
+            popup.classList.remove("opernsigpop")
+        }
+    </script>
+    
+</body>
+</html>
