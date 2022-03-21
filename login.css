@@ -88,12 +88,23 @@ body{
     transform: translate(-50%,-50%) scale(1);
 } */
 
-.popup p{
+#h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 1.5em;
+    letter-spacing: -.2px;
+}
+
+.both{
     text-align: center;
     font-family: sans-serif;
     font-size: 18px;
+    /* font-weight: bold; */
     padding-top: 1.5em;
     letter-spacing: -.2px;
+    margin-top: 30px;
 }
 .inp{
     height: 49px;
@@ -111,21 +122,31 @@ body{
 }
 .btn{
     height: 49px;
-    width: 95%;
-    margin-left: 9px;
+    width: 89%;
+    margin-left: 21px;
     margin-top: 31px;
     border-radius: 5.5px;
     background-color: rgb(9, 66, 19);
     cursor: pointer;
     box-shadow: 5px 10px 18px #d6d6d6;
+    color: white;
 
 }
+.btn:hover{
+    box-shadow: 4px 4px 10px 2px #d6d6d6;
+    background-color: rgb(235, 240, 236);
+    color: rgb(11, 44, 11);
+    border: 2px solid rgb(19, 61, 19);
+
+}
+
 .btn h3{
-    color: white;
+    /* color: white; */
     text-align: center;
     padding-top: 11.5px;
-    font-size: 20px;
+    font-size: 22px;
 }
+
 #forg{
     color: rgb(9, 66, 19);
     padding-right: 149px;
